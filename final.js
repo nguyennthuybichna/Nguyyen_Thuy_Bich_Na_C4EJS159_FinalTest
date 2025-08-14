@@ -204,7 +204,7 @@ function themLichSu(buoc, thoiGian) {
     const lichSu = document.getElementById("history-1");
 
     const dongMoi = document.createElement("div");
-    dongMoi.classList.add("component"); // giữ style giống dòng tiêu đề
+    dongMoi.classList.add("component");
 
     dongMoi.innerHTML = `
         <div><h5>${soLanChoi}</h5></div>
