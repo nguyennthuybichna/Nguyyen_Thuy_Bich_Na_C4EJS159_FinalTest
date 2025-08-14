@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(209, 208, 208);
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 90%;
+    max-width: 1200px;
+    /* height: 700px; */
+    background-color: white;
+    height: auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.start {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.start:hover {
+    background-color: #44c462;
+}
+.start:active {
+    background-color: #62d77d;
+}
+
+.stop {
+    padding: 10px 20px;
+    background-color: #a72828;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.stop:hover {
+    background-color: #bc4242;
+}
+.stop:active {
+    background-color: #d96060;
+}
+
+.p {
+    color: #cf324a;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.middle {
+    width: 100%;
+    max-width: 1000px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.gameboard {
+    width: 460px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #ffffff;
+}
+
+.box-1 {
+    background-color: #d4fcdc;
+    color: #5ccc74;
+
+}
+.box-2 {
+    background-color: #fcd4d4;
+    color: #bf6565;
+}
+.box-3 {
+    background-color: #d4d6fc;
+    color: #5e5f9a;
+}
+.box-4 {
+    background-color: #ebd4fc;
+    color: #7f5d99;
+}
+.box-5 {
+    background-color: #fcf5d4;
+    color: #a29761;
+}
+.box-6 {
+    background-color: #fcd4ef;
+    color: #a76290;
+}
+.box-7 {
+    background-color: #d4e4fc;
+    color: #5e79a1;
+}
+.box-8 {
+    background-color: #e0e0e0;
+    color: #9a5d5d;
+}
+.box-9 {
+    background-color: #d4fcdc;
+    color: #5ccc74;
+}
+.box-10 {
+    background-color: #fcf0d4;
+    color: #a18d5d;
+}
+.box-11 {
+    background-color: #e4fcd4;
+    color: #759c5b;
+}
+.box-12 {
+    background-color: black;
+}
+
+
+img {
+    width: 24px;
+    height: 24px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+}
+
+.clock {
+    width: 150px;
+    height: 100px;
+    background-color: #d4fcdc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.clock h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.time {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.intruct {
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.intruct h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+.arrow-key {
+    display: flex;
+    justify-content: center;
+}
+.arrow-up,
+.arrow-left,
+.arrow-down,
+.arrow-right {
+    font-size: 24px;
+}
+
+.word{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.word-3 {
+    font-weight: bold;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.history {
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgb(209, 209, 209);
+  border-radius: 5px;
+  
+}
+
+.history h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.component {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
